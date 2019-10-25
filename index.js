@@ -2,7 +2,7 @@
 
 $('form').on('submit', ele => {
     ele.preventDefault();
-    let val = $('input:input').val();
+    let val = $('#shopping-list-entry').val();
     if (val !== '') {
         $('ul').append(`<li>
   <span class="shopping-item">${val}</span>
